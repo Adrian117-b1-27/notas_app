@@ -32,7 +32,9 @@ class PantallaMaterias extends StatefulWidget {
 
 class _PantallaMateriasState extends State<PantallaMaterias> {
   
-  List<Materia> listaMaterias = [];
+  List<Materia> listaMaterias = [Materia(nombre: 'Matemáticas', creditos: 4) ..notas.addAll([4.0, 3.5,1]), 
+                                Materia(nombre: 'Física', creditos: 3) ..notas.addAll([4.0, 2.5,4]),
+                                Materia(nombre: 'Química', creditos: 3) ..notas.addAll([0.0, 4.0,2.5])];
 
   
   final TextEditingController _nombreController = TextEditingController();
